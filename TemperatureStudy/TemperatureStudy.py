@@ -17,9 +17,9 @@ DHT_NO_ERR = 0
 instance = dht11.DHT11(pin = DHTPIN)
 
 # milkcocoa setting
-# memo:
+# Note:
 #   [blocking = True] is important.
-#   Because, can not push it continuously.
+#   Because, You can not push it continuously.
 milkcocoaClient = milkcocoa.Milkcocoa.connectWithApiKey("app id", "api key", "secret", useSSL=False, blocking=True)
 datastore = milkcocoaClient.datastore("temperature")
 # push milkcocoa func
